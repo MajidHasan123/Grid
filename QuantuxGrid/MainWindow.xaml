@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:QuantuxGrid"
         mc:Ignorable="d"
+        DataContext="{Binding RelativeSource={RelativeSource Self}}"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <TextBlock Foreground="White"/>
+        <local:CustomQuantuxGrid x:Name="grid" />
     </Grid>
 </Window>

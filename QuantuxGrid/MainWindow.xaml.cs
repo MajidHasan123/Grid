@@ -20,9 +20,63 @@ namespace QuantuxGrid
     /// </summary>
     public partial class MainWindow : Window
     {
+        List<Person> persons = new List<Person>();
+        List<Headings> heading = new List<Headings>();
         public MainWindow()
         {
             InitializeComponent();
+
+            persons.Add(new Person()
+            {
+                Symbol = "Jahanzeb",
+                FutureContract = "Sayal",
+                Class="test Class",
+                SubClass="Test Sub Class",
+                ContractMonth="Contract Months",
+                TickSize=2.3,
+                TickValue=5,
+                Exchange="Exchange"
+                
+            });
+
+            persons.Add(new Person()
+            {
+                Symbol = "Jahanzeb",
+                FutureContract = "Sayal",
+                Class = "test Class",
+                SubClass = "Test Sub Class",
+                ContractMonth = "Contract Months",
+                TickSize = 2.3,
+                TickValue = 5,
+                Exchange = "Exchange"
+            });
+
+            persons.Add(new Person()
+            {
+                Symbol = "Jahanzeb",
+                FutureContract = "Sayal",
+                Class = "test Class",
+                SubClass = "Test Sub Class",
+                ContractMonth = "Contract Months",
+                TickSize = 2.3,
+                TickValue = 5,
+                Exchange = "Exchange"
+            });
+
+            persons.Add(new Person()
+            {
+                Symbol = "Jahanzeb",
+                FutureContract = "Sayal",
+                Class = "test Class",
+                SubClass = "Test Sub Class",
+                ContractMonth = "Contract Months",
+                TickSize = 2.3,
+                TickValue = 5,
+                Exchange = "Exchange"
+            });
+
+            grid.GridItemSource = persons;
+            grid.LoadData();
         }
     }
 }
